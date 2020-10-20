@@ -195,6 +195,26 @@ h2:after{
 	.banner .page-title h3  {
 		width: 45%;
 	}
+
+	.about-us {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.jaret-image img, 
+	.beth-image img {
+		padding: 10%;
+	}
+	.jaret{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.beth {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
 
 
