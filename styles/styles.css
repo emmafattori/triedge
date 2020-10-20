@@ -184,6 +184,7 @@ body {
 }
 
 .mobile-nav {
+  display: none;
   margin: 16px;
   font-size: 2em;
 }
@@ -282,6 +283,9 @@ ul li a {
   }
   nav {
     display: none;
+  }
+  .banner .page-title h3 {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

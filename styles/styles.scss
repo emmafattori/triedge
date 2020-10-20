@@ -14,7 +14,7 @@ body{
 // Header Styling
 
 .mobile-nav {
-	// display: none;
+	display: none;
 	margin: 16px;
 	font-size: 2em;
 }
@@ -119,5 +119,11 @@ ul {
 	nav {
 		display: none;
 	}
+
+	.banner .page-title h3  {
+		width: 45%;
+	}
 }
+
+
 
