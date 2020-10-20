@@ -179,8 +179,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .mobile-nav {
@@ -198,14 +208,7 @@ header {
           justify-content: space-between;
 }
 
-header .wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .wrapper .leaf {
+header .leaf {
   margin: 16px;
 }
 
@@ -275,6 +278,67 @@ ul li a {
 .banner .page-title h3 a {
   text-decoration: none;
   color: inherit;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+
+h2:before, h2:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 30%;
+  height: 1px;
+  content: '\a0';
+  background-color: black;
+}
+
+h2:before {
+  margin-left: -53%;
+  text-align: right;
+  right: 60%;
+}
+
+h2:after {
+  margin-left: 3%;
+  left: 60%;
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us .about-us-content1,
+.about-us .about-us-content2 {
+  margin: 1%;
+}
+
+.about-us .about-us-content1 span {
+  font-size: 1.3rem;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.about-us .about-us-content1 span p {
+  line-height: 1.4em;
+}
+
+.our-team .jaret,
+.our-team .beth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jaret-image img,
+.beth-image img {
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {

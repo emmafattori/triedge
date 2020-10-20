@@ -7,8 +7,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 // Generic Styling
+
+p{
+	margin: 0;
+	padding: 0;
+}
 body{
 	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
 }
 
 // Header Styling
@@ -22,14 +32,11 @@ header{
 	display: flex;
 	justify-content: space-between;
 
-	.wrapper {
-		width: 100%;
-		display: flex;
 
-		.leaf {
-			margin: 16px;
-		}
+	.leaf {
+		margin: 16px;
 	}
+	
 }
 
 ul {
@@ -107,6 +114,71 @@ ul {
 	}
 
 }
+
+// About Section Styling
+
+h2 {
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: relative;
+}
+
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 30%;
+    height: 1px;
+    content: '\a0';
+    background-color: black;
+}
+
+h2:before {
+    margin-left: -53%;
+    text-align: right;
+	right: 60%;
+}
+
+h2:after{
+	margin-left: 3%;
+	left: 60%;
+}
+
+.about-us {
+	display: flex;
+
+	.about-us-content1, 
+	.about-us-content2 {
+		margin: 1%;
+	}
+
+	.about-us-content1 span{
+		font-size: 1.3rem;
+		font-style: italic;
+		padding-bottom: 5px;
+
+		p {
+			line-height: 1.4em;
+		}
+
+	}
+
+}
+
+
+
+.our-team .jaret, 
+.our-team .beth{
+	display: flex
+}
+
+.jaret-image img, 
+.beth-image img {
+	width: 100%;
+}
+
+	
 
 
 // Media Queries
