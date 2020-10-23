@@ -137,12 +137,12 @@ h2:before, h2:after {
 h2:before {
     margin-left: -53%;
     text-align: right;
-	right: 60%;
+	right: 68%;
 }
 
 h2:after{
 	margin-left: 3%;
-	left: 60%;
+	left: 68%;
 }
 
 .about-us {
@@ -167,10 +167,11 @@ h2:after{
 }
 
 
-
 .our-team .jaret, 
 .our-team .beth{
-	display: flex
+	display: flex;
+	margin: 3% 0;
+	padding: 3% 0;
 }
 
 .jaret-image img, 
@@ -178,10 +179,78 @@ h2:after{
 	width: 100%;
 }
 
+.jaret-bio, 
+.beth-bio{
+	margin: 0 2%;
+}
+
+.jaret-image img, 
+.beth-image img{
+	width: 90%;
+    height: 93%;
+}
+
+#work {
+	border-bottom: 1px solid black;
+}
+#work .wrapper{
+	width: 90%;
+
+	.work-container	{
+	display: flex;
+	margin: 3%;
+
+	.work-tile{
+		margin: 1%;
+
+		h3{
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+
+	
+	}
+}	
+
+.copyright {
+	background-color: #050F17;
 	
 
+	a{
+		color: white;
+		text-decoration: none;
+	}
+
+	p, span {
+		color: white;
+		padding: 2%;
+		text-align: center;
+	}
+}
+.contact{
+	margin-bottom: 3%;
+}
+form{
+	display: flex;
+	flex-direction: column;
+
+	input, button{
+		margin: 1.5% 0;
+	}
+}
 
 // Media Queries
+
+@media screen and (max-width: 900px){
+	#work > div > h2:before, 
+	#work > div > h2:after{
+		display: none;
+	}
+	.work-container{
+		flex-direction: column;
+	}
+}
 
 @media screen and (max-width: 600px){
 	.mobile-nav{

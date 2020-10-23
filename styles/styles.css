@@ -300,12 +300,12 @@ h2:before, h2:after {
 h2:before {
   margin-left: -53%;
   text-align: right;
-  right: 60%;
+  right: 68%;
 }
 
 h2:after {
   margin-left: 3%;
-  left: 60%;
+  left: 68%;
 }
 
 .about-us {
@@ -334,11 +334,94 @@ h2:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 3% 0;
+  padding: 3% 0;
 }
 
 .jaret-image img,
 .beth-image img {
   width: 100%;
+}
+
+.jaret-bio,
+.beth-bio {
+  margin: 0 2%;
+}
+
+.jaret-image img,
+.beth-image img {
+  width: 90%;
+  height: 93%;
+}
+
+#work {
+  border-bottom: 1px solid black;
+}
+
+#work .wrapper {
+  width: 90%;
+}
+
+#work .wrapper .work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3%;
+}
+
+#work .wrapper .work-container .work-tile {
+  margin: 1%;
+}
+
+#work .wrapper .work-container .work-tile h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.copyright {
+  background-color: #050F17;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright p, .copyright span {
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+.contact {
+  margin-bottom: 3%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input, form button {
+  margin: 1.5% 0;
+}
+
+@media screen and (max-width: 900px) {
+  #work > div > h2:before,
+  #work > div > h2:after {
+    display: none;
+  }
+  .work-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 600px) {
