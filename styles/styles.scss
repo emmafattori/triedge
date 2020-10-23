@@ -59,6 +59,39 @@ ul {
 	}
 }
 
+.close{
+	display: none;
+}
+
+.fa-times{
+	font-size: 30px;
+	padding: 16px;
+}
+.mobile{
+	display: none;
+}
+.mobile-active{
+	position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    z-index: 55;
+    right: 0;
+    left: 0;
+    color: white;
+
+	ul{
+		flex-direction: column;
+
+		li{
+			text-align: center;
+
+			a{
+				font-size: 30px;
+			}
+		}
+	}
+}
 // Banner Section Styling
 
 .banner {
@@ -82,7 +115,7 @@ ul {
 	.page-title {
 		text-align: center;
 		position: inherit;
-		z-index: 5000;
+		z-index: 50;
 		padding-top: 15%;
 
 
