@@ -230,15 +230,32 @@ h2:after{
 }
 .contact{
 	margin-bottom: 3%;
-}
-form{
-	display: flex;
-	flex-direction: column;
 
-	input, button{
-		margin: 1.5% 0;
+	.contact-container{
+		display: flex;
+	}
+
+	form { 
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin-left: 2%;
+
+		input, button{
+			margin: 1.5% 0;
+		}
+	}
+
+	.contact-image {
+		width: 50%;
+		margin-right: 2%;
+
+		img{
+			width: 100%;
+		}
 	}
 }
+
 
 // Media Queries
 
@@ -250,8 +267,24 @@ form{
 	.work-container{
 		flex-direction: column;
 	}
+
+
 }
 
+@media screen and (max-width: 800px){
+	.contact-container{
+		flex-direction: column;
+
+		form{
+			width: 100%;
+			margin-top: 2%;
+		}
+
+		.contact-image{
+			width: 100%;
+		}
+	}
+}
 @media screen and (max-width: 600px){
 	.mobile-nav{
 		display: block;
